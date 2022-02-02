@@ -75,8 +75,8 @@ jobs:
             BASE_IMAGE=pytorch/pytorch:1.9.0-cuda11.1-cudnn8-devel
           push: true
           tags: |
-            tscholak/text-to-sql-eval:${{ github.sha }}
-            tscholak/text-to-sql-eval:cache
+            apurvakansara/new-backend:${{ github.sha }}
+            apurvakansara/new-backend:cache
           target: eval
           cache-from: type=registry,ref=tscholak/text-to-sql-eval:cache
           cache-to: type=inline
